@@ -1,0 +1,27 @@
+import yfinance as yf
+import json
+print(f"Using yfinance version: {yf.__version__}") # Check version
+try:
+    ticker_symbol = "RELIANCE.NS"
+    print(f"Attempting to fetch info for {ticker_symbol}...")
+    ticker = yf.Ticker(ticker_symbol)
+    info = ticker.info # This is the call that likely failed
+
+    if info:
+        print(f"Successfully fetched info for {ticker_symbol}:")
+        # Print a few key items
+        print(f"  Market Cap: {info.get('marketCap')}")
+        print(f"  Trailing PE: {info.get('trailingPE')}")
+        print(f"  Company Name: {info.get('longName')}")
+        # print(json.dumps(info, indent=2)) # Uncomment to see all info
+    else:
+        print(f"Failed to fetch info for {ticker_symbol} - .info dictionary is empty.")
+        print("Checking history as fallback...")
+        hist = ticker.history(period="1d")
+        if hist.empty:
+            print("History is also empty. Symbol might be invalid or delisted.")
+        else:
+            print("History fetch succeeded, but .info is empty.")
+
+except Exception as e:
+    print(f"An error occurred testing yfinance directly: {e}")

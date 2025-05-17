@@ -1,0 +1,50 @@
+// android/settings.gradle
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    includeBuild("../node_modules/@react-native/gradle-plugin")
+}
+
+plugins {
+    id("com.facebook.react.settings")
+}
+
+extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
+    ex.autolinkLibrariesFromCommand()
+}
+
+dependencyResolutionManagement {
+    // Enforce central repository declaration
+    repositoriesMode.set(RepositoriesMode.PREFER_PROJECT)
+    repositories {
+        google()
+        mavenCentral()
+        // Add the local React Native Maven repository required by the plugin
+        maven {
+            // Local Maven repo containing AARs for React Native modules
+            url "$rootDir/../node_modules/react-native/android"
+        }
+        // Add the local Maven repository for JCenter dependencies required by React Native
+        // (May be needed for older RN versions or specific libraries)
+        maven {
+            url 'https://maven.pkg.github.com/facebook/react-native' // For JCenter artifacts if needed
+            credentials {
+                // Optional: Add credentials if required for private GitHub Packages
+                // username = System.getenv("GITHUB_ACTOR")
+                // password = System.getenv("GITHUB_TOKEN")
+            }
+        }
+         maven { url 'https://www.jitpack.io' } // Keep if needed by other libraries
+    }
+}
+
+rootProject.name = 'MudraaInvest'
+include ':app'
+includeBuild('../node_modules/@react-native/gradle-plugin')
+
+// apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+
