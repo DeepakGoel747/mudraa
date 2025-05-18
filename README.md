@@ -115,6 +115,7 @@ Summarizes the user's total portfolio value and available funds, with clear butt
 To start the Metro dev server, run:
 
 ```sh
-npm start
+npx react-native start
 # or
 yarn start
+
