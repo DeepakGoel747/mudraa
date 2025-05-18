@@ -118,6 +118,10 @@ To start the Metro dev server, run:
 npx react-native start
 # or
 yarn start
+
+
+---
+
 Step 2: Build and Run Your App
 Android
 sh
@@ -137,10 +141,17 @@ npx react-native run-ios
 # or
 yarn ios
 
+
+
+---
+
 Step 3: Modify Your App
 
 Open App.tsx in your editor, make changes, and save. Your app will auto-update using Fast Refresh.
 Troubleshooting
+
+
+---
 
 If you encounter issues, see the Troubleshooting page.
 Learn More
@@ -150,6 +161,9 @@ Learn More
     Learn the Basics
     Blog
     @facebook/react-native
+
+
+---
 
 License
 
@@ -174,6 +188,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+---
 
 Contributions are welcome! Please see CONTRIBUTING.md for guidelines.
 Security
