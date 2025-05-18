@@ -118,4 +118,112 @@ To start the Metro dev server, run:
 npx react-native start
 # or
 yarn start
+Step 2: Build and Run Your App
+Android
+sh
 
+npx react-native run-android
+# or
+yarn android
+
+iOS
+
+Install CocoaPods dependencies (first time only or after updating native deps):
+sh
+
+bundle install
+bundle exec pod install
+npx react-native run-ios
+# or
+yarn ios
+
+Step 3: Modify Your App
+
+Open App.tsx in your editor, make changes, and save. Your app will auto-update using Fast Refresh.
+Troubleshooting
+
+If you encounter issues, see the Troubleshooting page.
+Learn More
+
+    React Native Website
+    Getting Started
+    Learn the Basics
+    Blog
+    @facebook/react-native
+
+License
+
+MIT License
+
+Copyright (c) 2025 DeepakGoel747
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Contributions are welcome! Please see CONTRIBUTING.md for guidelines.
+Security
+ Contributing to Mudraa Invest
+
+Thank you for considering contributing to Mudraa Invest! We welcome all kinds of contributions, including bug reports, feature requests, documentation improvements, and code contributions.
+
+## How to Contribute
+
+1. **Fork** the repository on GitHub.
+2. **Clone** your fork to your local machine.
+3. **Create a branch** for your feature or fix (`git checkout -b my-feature`).
+4. **Make your changes** and commit them with clear messages.
+5. **Push** your branch to your forked repo.
+6. **Open a Pull Request** on GitHub from your branch to `main` in this repository.
+
+## Guidelines
+
+- Follow the existing code style and conventions.
+- Add/update tests for your changes if applicable.
+- Document any new features or changes.
+- Be respectful and constructive in discussions.
+
+## Code of Conduct
+
+## Our Standards
+
+Examples of behavior that contributes to creating a positive environment include:
+
+- Using welcoming and inclusive language
+- Being respectful of differing viewpoints and experiences
+- Gracefully accepting constructive criticism
+- Showing empathy towards other community members
+
+Examples of unacceptable behavior include:
+
+- The use of sexualized language or imagery and unwelcome sexual attention or advances
+- Trolling, insulting/derogatory comments, and personal or political attacks
+- Public or private harassment
+
+## Enforcement
+
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project maintainer at [your-email@example.com]. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate.
+
+This Code of Conduct is adapted from the Contributor Covenant, version 2.1.
+
+## Need Help?
+
+If you have questions, open an issue or contact the maintainer.
+If you discover a security vulnerability, please see SECURITY.md for reporting instructions.
+Code of Conduct
+
+Please note we have a Code of Conduct. By participating, you agree to abide by its terms.
